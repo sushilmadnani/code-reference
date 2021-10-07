@@ -71,6 +71,16 @@ git merge
 # pulling changes from github
 git pull (git pull = git fetch + git merge)
 
+# show and add remote for github
+git remote -v
+git remote add origin <URL>
+
+# fetch, pull and push changes to remote github.
+git fetch origin main
+git pull origin main
+git push origin main
+git push -u origin main
+
 # Miscellaneous git tools
 git show commitid
 git stash
@@ -91,13 +101,3 @@ git push -f origin master
 git rebase -i commitid 
 git push -f origin master
 git cherry-pick commitid (Pick the changes from a specific commit from any branch and merge with another branch.)
-
-
-
-
-
-
-
-
-
-
