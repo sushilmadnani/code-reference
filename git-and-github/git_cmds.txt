@@ -1,0 +1,103 @@
+# to check the git version
+git --version  
+
+# configuration of global variables
+git config --global user.name "Sushil Madnani"
+git config --global user.email "sushilmadnani@gmail.com"  
+git config --list
+
+# initialize git
+git init
+git status
+
+# tracking for one specific file
+git add <filename>  
+# tracking for all files & folders
+git add . 
+
+# unstaging and unmodifying files (discards all your current changes in the working directory)
+git restore --staged filename.txt
+git checkout --filename.txt
+git checkout -f (Rollback to the previous commit. losing all newly modified files.)
+
+# commiting changes
+git commit -m "Your commit message" 
+
+# skipping staging area
+git commit -a -m "Commit Message" 
+
+# view commit history
+git log  
+git log --oneline
+git log --oneline --graph --all
+
+# delete git project
+rm -rf .git 
+
+# git diff
+git diff
+git diff --staged
+
+# moving and removing files
+git rm filename.txt
+git mv filename.txt newfilename.txt
+
+# setting alias
+git config --global alias.st status
+git st
+
+git config --global alias.unstage 'restore --staged --'
+git unstage file.txt
+
+# creating and viewing branches
+git branch
+git branch -v
+git branch branchname
+git checkout branchname
+git checkout -b  branchname (Creating and Checkout to a new branch.)
+git branch -d branchname (Deleting a merged branch.)
+git branch -D branchname (Deleting a non-merged branch.)
+
+# merging and rebasing branches
+git branch --merged (To display merged branches only)
+git branch --no-merged (To display non merged branches only)
+git merge branchname (currently you are on main branch)
+git rebase main (currently you are on branch other than main)
+
+# fetch changes from github
+git fetch
+git merge
+
+# pulling changes from github
+git pull (git pull = git fetch + git merge)
+
+# Miscellaneous git tools
+git show commitid
+git stash
+git stash list
+git stash apply stash@{0}
+git stash drop stash@{0}
+git clean -f -d (cleaning working directory)
+git commit --amend (Changing the message of the last commit)
+git checkout commitid
+git switch -
+git switch -c  branchname
+git revert commitid
+git revert -n commitid (explicitly commit the revert changes -1)
+git revert --abort (explicitly commit the revert changes - 2)
+git reset --soft commitid 
+git reset --hard commitid
+git push -f origin master
+git rebase -i commitid 
+git push -f origin master
+git cherry-pick commitid (Pick the changes from a specific commit from any branch and merge with another branch.)
+
+
+
+
+
+
+
+
+
+
