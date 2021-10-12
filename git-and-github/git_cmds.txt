@@ -64,6 +64,9 @@ git branch --no-merged (To display non merged branches only)
 git merge branchname (currently you are on main branch)
 git rebase main (currently you are on branch other than main)
 
+# cloning a github repository
+git clone <url>
+
 # fetch changes from github
 git fetch
 git merge
