@@ -19,6 +19,10 @@ git add .
 git restore --staged filename.txt
 git checkout --filename.txt
 git checkout -f (Rollback to the previous commit. losing all newly modified files.)
+git reset HEAD -- path/to/file (unstage files from the index)
+git reset HEAD -- 
+
+
 
 # commiting changes
 git commit -m "Your commit message" 
@@ -77,6 +81,7 @@ git pull (git pull = git fetch + git merge)
 # show and add remote for github
 git remote -v
 git remote add origin <URL>
+git remote set-url origin https://github.com/sushilmadnani/my-portfolio.git
 
 # fetch, pull and push changes to remote github.
 git fetch origin main
