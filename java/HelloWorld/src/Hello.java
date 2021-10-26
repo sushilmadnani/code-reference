@@ -30,7 +30,7 @@ public class Hello {
         
         System.out.println("total Kilograms: "+ kilogram);
         
-        double pi = 3.1415927d;
+       // double pi = 3.1415927d;
         double anotherNumber = 3_000_000.4_567_890d;
         System.out.println(anotherNumber);
         
